@@ -29,7 +29,8 @@ body {
   font-family: 'Roboto' !important;
   font-weight: 100 !important;
   font-size: 35px !important;
-  color: #fff !important
+  color: #fff !important;
+  text-shadow: 0 0 20px #0000008a;
 }
 
 .gsc-search-button  {
@@ -53,7 +54,8 @@ input#gsc-i-id1.gsc-input {
   font-family: 'Roboto' !important;
   font-weight: 100 !important;
   font-size: 35px !important;
-  color: #fff !important
+  color: #fff !important;
+  text-shadow: 0 0 20px #0000008a;
 }
 
 .cse input.gsc-input, input.gsc-input {
