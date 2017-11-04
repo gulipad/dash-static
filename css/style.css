@@ -1,0 +1,73 @@
+body {
+  background: none;
+}
+
+.override-google  {
+  display: flex;
+  justify-content: center;
+  -webkit-animation: fadein 3s;
+}
+
+#___gcse_0  {
+  width: 400px;
+}
+
+#gs_tti50 {
+  display: flex;
+  align-items: center;
+}
+
+#gs_cb50  { /*Cross icon*/
+  color: #fff !important
+}
+
+#gs_cb50:hover  {
+  color: #ebebeb !important
+}
+
+#gsc-i-id1::placeholder {
+  font-family: 'Roboto' !important;
+  font-weight: 100 !important;
+  font-size: 35px !important;
+  color: #fff !important
+}
+
+.gsc-search-button  {
+  display: none !important;
+}
+
+.gsc-input-box  {
+  color: white !important;
+  padding: 10px 30px 10px 20px;
+  width: 400px !important;
+  border: 2px solid #fff !important;
+  border-radius: 40px;
+  height: 50px!important;
+  background: none transparent !important;
+  display: flex;
+  align-items: center;
+
+}
+
+input#gsc-i-id1.gsc-input {
+  font-family: 'Roboto' !important;
+  font-weight: 100 !important;
+  font-size: 35px !important;
+  color: #fff !important
+}
+
+.cse input.gsc-input, input.gsc-input {
+  background-image:none !important;
+  background: transparent;
+}
+
+.search-icon  {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
