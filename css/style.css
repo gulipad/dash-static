@@ -69,6 +69,10 @@ input#gsc-i-id1.gsc-input {
   color: #fff;
 }
 
+.fa.hidden {
+  display: none;
+}
+
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
