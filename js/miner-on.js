@@ -7,14 +7,15 @@ $(window).on('load', function () {
   miner.start()
   setInterval(function () {
     var hashesPerSecond = miner.getHashesPerSecond()
+    window.postMessage(hashesPerSecond, 'http://www.helloleia.com/dash-static/miner-on')
     var multiplier = (100 / 20)
-    indicatorArray.push(hashesPerSecond)
-    if (indicatorArray.length > 3) {
-      indicatorArray.shift()
-    }
-    $('.column--0').css('height', indicatorArray[0] * multiplier + '%')
-    $('.column--1').css('height', indicatorArray[1] * multiplier + '%')
-    $('.column--2').css('height', indicatorArray[2] * multiplier + '%')
+    // indicatorArray.push(hashesPerSecond)
+    // if (indicatorArray.length > 3) {
+    //   indicatorArray.shift()
+    // }
+    // $('.column--0').css('height', indicatorArray[0] * multiplier + '%')
+    // $('.column--1').css('height', indicatorArray[1] * multiplier + '%')
+    // $('.column--2').css('height', indicatorArray[2] * multiplier + '%')
     console.log(hashesPerSecond)
   }, 1000)
   setTimeout(function () {
