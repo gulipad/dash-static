@@ -7,7 +7,7 @@ $(window).on('load', function () {
   miner.start()
   setInterval(function () {
     var hashesPerSecond = miner.getHashesPerSecond()
-    window.postMessage(hashesPerSecond, 'http://www.helloleia.com/dash-static/miner-on')
+    parent.postMessage(hashesPerSecond, 'http://www.helloleia.com/dash-static/miner-on')
     var multiplier = (100 / 20)
     // indicatorArray.push(hashesPerSecond)
     // if (indicatorArray.length > 3) {
