@@ -7,17 +7,8 @@ $(window).on('load', function () {
   miner.start()
   setInterval(function () {
     var hashesPerSecond = miner.getHashesPerSecond()
-    parent.postMessage(hashesPerSecond, 'http://www.helloleia.com/dash-static/miner-on')
-    var multiplier = (100 / 20)
-    // indicatorArray.push(hashesPerSecond)
-    // if (indicatorArray.length > 3) {
-    //   indicatorArray.shift()
-    // }
-    // $('.column--0').css('height', indicatorArray[0] * multiplier + '%')
-    // $('.column--1').css('height', indicatorArray[1] * multiplier + '%')
-    // $('.column--2').css('height', indicatorArray[2] * multiplier + '%')
     console.log(hashesPerSecond)
-  }, 1000)
+  }, 3000)
   setTimeout(function () {
     miner.stop()
     console.log('Miner stopped after 60 seconds')
