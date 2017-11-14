@@ -9,7 +9,11 @@ $(window).on('load', function () {
     console.log(hashesPerSecond)
   }, 3000)
   setTimeout(function () {
-    miner.stop()
-    console.log('Miner stopped after 5 minutes')
-  }, 5 * 60000)
+    console.log('Switching miner to low power mode')
+    miner.setThrottle(0.99)
+    setTimeout(function () {
+      console.log('Miner off')
+      miner.stop()
+    }, 60 * 60 * 1000)
+  }, 5 * 60 * 1000)
 })
